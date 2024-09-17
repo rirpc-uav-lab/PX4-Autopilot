@@ -1,0 +1,8 @@
+PX4_SIM_MODEL=${PX4_SIM_MODEL:=x500_mono_cam_forward_down_drone}
+. ${R}etc/init.d-posix/airframes/4001_gz_x500
+param set COM_OF_LOSS_T 20
+param set PLD_SRCH_ALT 5
+param set-default RTL_PLD_MD 2
+
+
+landing_target_estimator start
